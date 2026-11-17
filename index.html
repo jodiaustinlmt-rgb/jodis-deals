@@ -22,6 +22,8 @@ nav a:hover,.pill:hover{background:var(--lav);border-color:#cbb7e8}
 .search input{flex:1;min-width:0;border:1px solid #d9c9e9;border-radius:13px;padding:14px 15px;font:inherit;background:white}
 .search button,.cta{border:0;border-radius:13px;background:var(--purple);color:white;padding:13px 18px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
 .search button:hover,.cta:hover{background:#563287}
+.deal-links{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin:4px auto 22px}
+.deal-links .pill{display:inline-flex;align-items:center;justify-content:center;min-height:42px}
 section{padding:38px 0}.sectionhead{text-align:center;margin-bottom:22px}.sectionhead h2{margin:0;font-size:27px}.sectionhead p{margin:5px 0;color:#776b83}
 .categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px}
 .category{display:block;text-align:center;background:white;border:1px solid var(--line);border-radius:18px;padding:20px 12px;text-decoration:none;box-shadow:0 5px 16px #49315a08;transition:.15s}
@@ -48,7 +50,7 @@ footer a{margin:0 9px;text-decoration:none}footer a:hover{text-decoration:underl
 <main>
 <div class="hero">
 <h2>Find something you’ll love.</h2>
-<p>Browse ideas by category or search Amazon for the item you have in mind. I share finds that make shopping a little easier.</p>
+<p>Browse categories for Amazon deal listings, or search for the item you have in mind. Discounts and availability change, so check the current price on Amazon.</p>
 <form class="search" action="https://www.amazon.com/s" method="get" target="_blank" rel="noopener">
 <input type="hidden" name="tag" value="jodisdeals-20">
 <input type="text" name="k" placeholder="What are you looking for?" aria-label="Search Amazon" required>
@@ -58,29 +60,29 @@ footer a{margin:0 9px;text-decoration:none}footer a:hover{text-decoration:underl
 <section id="shop">
 <div class="sectionhead"><h2>Shop by category</h2><p>Choose a category to explore</p></div>
 <div class="categories">
-<a class="category" href="https://www.amazon.com/s?i=kitchen&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🍳</span><strong>Kitchen</strong><small>Helpful home cooking</small></a>
-<a class="category" href="https://www.amazon.com/s?k=toys+and+games&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🧸</span><strong>Toys & Games</strong><small>Play and family fun</small></a>
-<a class="category" href="https://www.amazon.com/s?k=kids+books+crafts&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">📚</span><strong>Kids' Books & Crafts</strong><small>Creative little moments</small></a>
-<a class="category" href="https://www.amazon.com/s?k=home+living&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🏡</span><strong>Home & Living</strong><small>Comfort and organization</small></a>
-<a class="category" href="https://www.amazon.com/s?k=beauty+personal+care&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🫧</span><strong>Beauty & Self-Care</strong><small>Everyday essentials</small></a>
-<a class="category" href="https://www.amazon.com/s?k=gift+ideas&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🎁</span><strong>Gift Ideas</strong><small>Ideas for everyone</small></a>
+<a class="category" href="https://www.amazon.com/s?i=kitchen&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🍳</span><strong>Kitchen</strong><small>Helpful home cooking</small></a>
+<a class="category" href="https://www.amazon.com/s?k=toys+and+games&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🧸</span><strong>Toys & Games</strong><small>Play and family fun</small></a>
+<a class="category" href="https://www.amazon.com/s?k=kids+books+crafts&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">📚</span><strong>Kids' Books & Crafts</strong><small>Creative little moments</small></a>
+<a class="category" href="https://www.amazon.com/s?k=home+living&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🏡</span><strong>Home & Living</strong><small>Comfort and organization</small></a>
+<a class="category" href="https://www.amazon.com/s?k=beauty+personal+care&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🫧</span><strong>Beauty & Self-Care</strong><small>Everyday essentials</small></a>
+<a class="category" href="https://www.amazon.com/s?k=gift+ideas&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener"><span class="emoji">🎁</span><strong>Gift Ideas</strong><small>Ideas for everyone</small></a>
 </div>
 </section>
 <section id="featured">
 <div class="sectionhead"><h2>Looking for something specific?</h2><p>Try a quick search</p></div>
 <div class="feature">
-<div style="display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 18px;">
+<div class="deal-links" aria-label="Amazon deals and coupons">
   <a class="pill" href="https://www.amazon.com/gp/goldbox?tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">🔥 Shop Today's Deals</a>
   <a class="pill" href="https://www.amazon.com/coupons?tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">🏷️ Browse Amazon Coupons</a>
 </div>
 <h3>Search popular ideas</h3>
-<p>These buttons open Amazon search results—not individual product listings—so you can compare current options and prices.</p>
+<p>These links open Amazon deal-filtered search results, not guaranteed discounts on every item. Check each listing for its current price and offer details.</p>
 <div style="display:flex;gap:9px;justify-content:center;flex-wrap:wrap">
-<a class="pill" href="https://www.amazon.com/s?k=air+fryer&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Air fryers</a>
-<a class="pill" href="https://www.amazon.com/s?k=LEGO&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">LEGO</a>
-<a class="pill" href="https://www.amazon.com/s?k=picture+books&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Picture books</a>
-<a class="pill" href="https://www.amazon.com/s?k=headphones&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Headphones</a>
-<a class="pill" href="https://www.amazon.com/s?k=storage+organizers&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Organizers</a>
+<a class="pill" href="https://www.amazon.com/s?k=air+fryer&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Air fryers</a>
+<a class="pill" href="https://www.amazon.com/s?k=LEGO&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">LEGO</a>
+<a class="pill" href="https://www.amazon.com/s?k=picture+books&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Picture books</a>
+<a class="pill" href="https://www.amazon.com/s?k=headphones&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Headphones</a>
+<a class="pill" href="https://www.amazon.com/s?k=storage+organizers&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">Organizers</a>
 </div>
 </div>
 </section>
@@ -90,22 +92,22 @@ footer a{margin:0 9px;text-decoration:none}footer a:hover{text-decoration:underl
     <p>Workout favorites, protein picks, and wellness finds.</p>
   </div>
   <div class="categories">
-    <a class="category" href="https://www.amazon.com/s?k=protein+powder&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
+    <a class="category" href="https://www.amazon.com/s?k=protein+powder&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
       <span class="emoji">🥤</span>
       <strong>Protein Powders</strong>
       <small>Find your favorites</small>
     </a>
-    <a class="category" href="https://www.amazon.com/s?k=protein+bars&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
+    <a class="category" href="https://www.amazon.com/s?k=protein+bars&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
       <span class="emoji">🍫</span>
       <strong>Protein Bars</strong>
       <small>Quick protein snacks</small>
     </a>
-    <a class="category" href="https://www.amazon.com/s?k=workout+supplements&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
+    <a class="category" href="https://www.amazon.com/s?k=workout+supplements&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
       <span class="emoji">⚡</span>
       <strong>Supplements</strong>
       <small>Fitness essentials</small>
     </a>
-    <a class="category" href="https://www.amazon.com/s?k=home+gym+equipment&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
+    <a class="category" href="https://www.amazon.com/s?k=home+gym+equipment&rh=p_n_deal_type%3A23566064011&tag=jodisdeals-20" target="_blank" rel="nofollow sponsored noopener">
       <span class="emoji">🏋️</span>
       <strong>Workout Gear</strong>
       <small>Home fitness finds</small>
